@@ -1,26 +1,36 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React, { useState } from "react";
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 
-function App() {
+// Components
+import Header from "./components/Header/Header";
+import SideMenuBar from "./components/SideMenuBar/SideMenuBar";
+import HomePage from "./pages/HomePage/HomePage";
+import VideoPage from "./pages/VideoPage/VideoPage";
+import SearchPage from "./pages/SearchPage/SearchPage";
+
+// Styled
+import { AppMUIStyled } from "./AppStyled";
+
+const App = () => {
+  const classes = AppMUIStyled();
+  const [open, setOpen] = useState(false);
+
+  const handleDrawerOpen = () => setOpen(!open);
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Router>
+      <Header leftMostIconHandler={handleDrawerOpen} />
+      <div className={classes.headerSpace}></div>
+      <div className={classes.mainContainer}>
+        <SideMenuBar open={open} />
+        <Switch>
+          <Route exact path="/" component={HomePage} />
+          <Route exact path="/videoPage/:id/:queryText" component={VideoPage} />
+          <Route exact path="/searchPage/:queryText" component={SearchPage} />
+        </Switch>
+      </div>
+    </Router>
   );
-}
+};
 
 export default App;
