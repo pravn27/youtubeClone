@@ -35,7 +35,7 @@ const HomePage = () => {
           </Grid>
         ))
       ) : (
-        <CircularProgress />
+        <CircularProgress className={classes.loader} />
       )}
     </Grid>
   );

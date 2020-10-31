@@ -28,7 +28,7 @@ export const MediaCardMUIStyled = makeStyles((theme) => ({
     "-webkitBoxOrient": "vertical",
     lineHeight: 1.3,
     overflow: "hidden",
-    "max-height": 40,
+    height: 40,
   },
   verticalDivider: {
     background: "#fff",

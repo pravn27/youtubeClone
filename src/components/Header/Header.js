@@ -8,6 +8,7 @@ import {
   Typography,
   InputBase,
   Avatar,
+  Button,
 } from "@material-ui/core";
 
 import MenuIcon from "@material-ui/icons/Menu";
@@ -26,12 +27,9 @@ const Header = ({ leftMostIconHandler }) => {
   const [searchText, setSearchText] = useState("");
   const history = useHistory();
 
-  const searchTextHandle = (e) => {
-    setSearchText(e.target.value);
-    if (e.target.value.length > 4) {
-      history.push(`/searchPage/${e.target.value}`);
-    }
-  };
+  const searchTextHandle = (e) => setSearchText(e.target.value);
+
+  const searchBtnClickHandle = () => history.push(`/searchPage/${searchText}`);
 
   return (
     <AppBar position="fixed" className={classes.appBar}>
@@ -63,6 +61,14 @@ const Header = ({ leftMostIconHandler }) => {
             onChange={searchTextHandle}
           />
         </div>
+        <Button
+          variant="contained"
+          className={classes.searchBtn}
+          onClick={searchBtnClickHandle}
+          disabled={searchText.length > 4 ? false : true}
+        >
+          Search
+        </Button>
         <div className={classes.rightSideIcon}>
           <VideoCallIcon />
           <AppsIcon />

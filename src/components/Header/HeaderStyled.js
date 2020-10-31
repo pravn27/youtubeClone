@@ -16,6 +16,7 @@ export const HeaderMUIStyled = makeStyles((theme) => ({
     },
   },
   search: {
+    border: "1px solid #424242",
     position: "relative",
     borderRadius: theme.shape.borderRadius,
     backgroundColor: fade(theme.palette.common.white, 0.15),
@@ -37,6 +38,15 @@ export const HeaderMUIStyled = makeStyles((theme) => ({
     display: "flex",
     alignItems: "center",
     justifyContent: "center",
+  },
+  searchBtn: {
+    background: "#ffc107",
+    textTransform: "unset",
+    marginLeft: 10,
+    border: "1px solid #424242",
+    "&:hover": {
+      background: "#ffc107",
+    },
   },
   inputRoot: {
     color: "inherit",
