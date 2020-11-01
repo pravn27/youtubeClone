@@ -1,4 +1,22 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Youtube clone with ReactJS
+### `Technology stack used`
+- ReactJS V16.13.1, with react hooks
+- Material UI css framework
+- Youtube API from `youtube-sr` node module
+### `Features included`
+- Home page
+![image](https://user-images.githubusercontent.com/17290429/97794549-b6b8e080-1c21-11eb-8ba7-b938adc4c04c.png)
+- Video playback page
+![image](https://user-images.githubusercontent.com/17290429/97794589-0c8d8880-1c22-11eb-8bd0-79b1bcd19969.png)
+- Search page
+![image](https://user-images.githubusercontent.com/17290429/97794605-2e870b00-1c22-11eb-8012-ce95a5e2c7de.png)
+
+### `How to run locally, dev setup`
+- Clone repo https://github.com/pravn27/youtubeClone.git
+- npm i, install required dependency
+- once loading the application in browser, to load Youtube data make sure install CORS extension plugin and enabled.
+
+This project setup with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
 
@@ -27,42 +45,3 @@ Your app is ready to be deployed!
 
 See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
-
-### Analyzing the Bundle Size
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
-
-### Making a Progressive Web App
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `npm run build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
