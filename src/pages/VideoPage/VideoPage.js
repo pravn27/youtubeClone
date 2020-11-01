@@ -48,7 +48,9 @@ const VideoPage = ({ match: { params } }) => {
           {videoList &&
             videoList.map((video, index) => (
               <Grid key={index} item className={classes.nextUpGridMedia}>
-                <StyledLink to={`/videoPage/${video.id}/${video.title}`}>
+                <StyledLink
+                  to={`/youtubeClone/videoPage/${video.id}/${video.title}`}
+                >
                   <UpNextMediaCard videoInfo={video} />
                 </StyledLink>
               </Grid>

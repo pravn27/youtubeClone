@@ -29,7 +29,8 @@ const Header = ({ leftMostIconHandler }) => {
 
   const searchTextHandle = (e) => setSearchText(e.target.value);
 
-  const searchBtnClickHandle = () => history.push(`/searchPage/${searchText}`);
+  const searchBtnClickHandle = () =>
+    history.push(`/youtubeClone/searchPage/${searchText}`);
 
   return (
     <AppBar position="fixed" className={classes.appBar}>
@@ -44,7 +45,7 @@ const Header = ({ leftMostIconHandler }) => {
           <MenuIcon />
         </IconButton>
         <Typography className={classes.title} variant="h5" noWrap>
-          <StyledLink to="/">YouTube</StyledLink>
+          <StyledLink to="/youtubeClone">YouTube</StyledLink>
         </Typography>
         <div className={classes.search}>
           <div className={classes.searchIcon}>

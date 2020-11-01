@@ -29,7 +29,9 @@ const HomePage = () => {
       {videoList.length > 0 ? (
         videoList.map((video, index) => (
           <Grid key={index} item>
-            <StyledLink to={`/videoPage/${video.id}/${video.title}`}>
+            <StyledLink
+              to={`/youtubeClone/videoPage/${video.id}/${video.title}`}
+            >
               <MediaCard videoInfo={video} />
             </StyledLink>
           </Grid>

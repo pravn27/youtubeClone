@@ -24,9 +24,17 @@ const App = () => {
       <div className={classes.mainContainer}>
         <SideMenuBar open={open} />
         <Switch>
-          <Route exact path="/" component={HomePage} />
-          <Route exact path="/videoPage/:id/:queryText" component={VideoPage} />
-          <Route exact path="/searchPage/:queryText" component={SearchPage} />
+          <Route exact path="/youtubeClone" component={HomePage} />
+          <Route
+            exact
+            path="/youtubeClone/videoPage/:id/:queryText"
+            component={VideoPage}
+          />
+          <Route
+            exact
+            path="/youtubeClone/searchPage/:queryText"
+            component={SearchPage}
+          />
         </Switch>
       </div>
     </Router>
