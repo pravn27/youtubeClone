@@ -3,6 +3,8 @@
 - ReactJS V16.13.1, with react hooks
 - Material UI css framework
 - Youtube API from `youtube-sr` node module
+### `Deployed in github pages`
+- Demo link - https://pravn27.github.io/youtubeClone/
 ### `Features included`
 - Home page
 ![image](https://user-images.githubusercontent.com/17290429/97794549-b6b8e080-1c21-11eb-8ba7-b938adc4c04c.png)
