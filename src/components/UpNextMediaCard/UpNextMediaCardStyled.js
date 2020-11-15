@@ -6,7 +6,7 @@ export const UpNextMUIStyled = makeStyles((theme) => ({
     opacity: 0.7,
     display: "flex",
     marginTop: 10,
-    height: "8vw",
+    height: "auto",
     "&:hover": {
       opacity: 1,
     },

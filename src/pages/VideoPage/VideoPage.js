@@ -29,7 +29,7 @@ const VideoPage = ({ match: { params } }) => {
 
   return (
     <Grid container spacing={2} className={classes.videoPageContainer}>
-      <Grid item md={8}>
+      <Grid item md={8} sm={12}>
         <CardMedia
           component="iframe"
           src={videoUrl}
@@ -37,7 +37,7 @@ const VideoPage = ({ match: { params } }) => {
         />
         {playerInfo && <PlaybackVideoInfo details={playerInfo} />}
       </Grid>
-      <Grid item md={4}>
+      <Grid item md={4} sm={12}>
         <Paper className={classes.upNextTitleContainer}>
           <Typography variant="h6">
             <span className={classes.upNextSubtitle}>Up next </span>"{queryText}
