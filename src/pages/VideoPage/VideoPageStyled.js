@@ -6,7 +6,7 @@ export const VideoPageMUIStyled = makeStyles((theme) => ({
   },
   iframeMedia: {
     width: "100%",
-    height: 500,
+    height: "35vw",
     border: 0,
   },
   upNextTitleContainer: {
